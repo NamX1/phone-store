@@ -96,7 +96,7 @@ export default function QuizModal({ isOpen, onClose }: { isOpen: boolean; onClos
 
         {/* STEP 2: Loading */}
         {step === 2 && (
-          <div className="p-12 text-center flex flex-col items-center justify-center h-[400px]">
+          <div className="p-12 text-center flex flex-col items-center justify-center h-100">
             <div className="animate-spin w-12 h-12 border-4 border-indigo-600 border-t-transparent rounded-full mb-6"></div>
             <h3 className="font-bold text-xl animate-pulse text-zinc-800">AI is analyzing specs...</h3>
             <p className="text-zinc-500 text-sm mt-2">Matching budget {fmt(budget)} with {priority} needs...</p>
@@ -105,7 +105,7 @@ export default function QuizModal({ isOpen, onClose }: { isOpen: boolean; onClos
 
         {/* STEP 3: Results */}
         {step === 3 && (
-          <div className="p-6 bg-zinc-50 h-[550px] overflow-y-auto">
+          <div className="p-6 bg-zinc-50 h-137.5 overflow-y-auto">
             <h2 className="text-xl font-bold mb-6 text-center text-zinc-900">Top Recommendations For You</h2>
             <div className="grid gap-4">
               {results.length > 0 ? (

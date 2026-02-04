@@ -14,7 +14,7 @@ export default function StickyCompare() {
         
         <div className="flex gap-3 overflow-x-auto no-scrollbar py-1">
             {compareList.map((phone) => (
-                <div key={phone.id} className="relative group flex-shrink-0 bg-white p-2 pl-3 pr-8 rounded-lg border border-zinc-200 shadow-sm w-44 flex items-center gap-3">
+                <div key={phone.id} className="relative group shrink-0 bg-white p-2 pl-3 pr-8 rounded-lg border border-zinc-200 shadow-sm w-44 flex items-center gap-3">
                     <img src={phone.image} className="w-8 h-8 object-contain mix-blend-multiply" />
                     <div className="overflow-hidden">
                         <p className="text-xs font-bold truncate text-zinc-800">{phone.name}</p>
